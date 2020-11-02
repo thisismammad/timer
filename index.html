@@ -18,9 +18,9 @@
                 <p id="p-second" >Second</p>
             </div>
             <div id="numbers" onmousewheel>
-                <input type="number" onkeypress="return false" min="0" max ="999" value="00" id="in-hour" class="num">
-                <input type="number" onkeypress="return false" min="0" max="59" value="00" id="in-minutes" class="num">
-                <input type="number" onkeypress="return false" min="0" max="59" value="00" id="in-second" class="num">
+                <input type="number" onfocus="makeEmpty(this.id)" oninput="validity.valid||(value='');" onpress="isNumber(event)" min="0" max ="999" value="00" id="in-hour" class="num">
+                <input type="number" onfocus="makeEmpty(this.id)" oninput="validity.valid||(value='');" onpress="isNumber(event)" min="0" max="59" value="00" id="in-second" class="num">
+                <input type="number" onfocus="makeEmpty(this.id)" oninput="validity.valid||(value='');" onpress="isNumber(event)" min="0" max="59" value="00" id="in-minutes" class="num">
             </div>
             <div id="buttons">
                 <button  onclick="start()" id="start" class="start" style="margin-right: 37px;">Start</button>
