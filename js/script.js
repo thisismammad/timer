@@ -64,3 +64,9 @@ function isNumber(evt) {
         document.getElementById(id).value = "";
     }    
   }
+
+  function resetNum(id){
+    if (document.getElementById(id).value=="" || document.getElementById(id).value== 0){
+        document.getElementById(id).value = "00";
+    }    
+  }
