@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chornometer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <img id="icon" src="images/timer.png">
+            <p id="head-para">Timer</p>
+        </div>
+        <div id="timer">
+            <div class="labels">
+                <p id="p-hour" >Hour</p>
+                <p id="p-minutes" >Minutes</p>
+                <p id="p-second" >Second</p>
+            </div>
+            <div id="numbers" onmousewheel>
+                <input type="number" onkeypress="return false" min="0" max ="999" value="00" id="in-hour" class="num">
+                <input type="number" onkeypress="return false" min="0" max="59" value="00" id="in-minutes" class="num">
+                <input type="number" onkeypress="return false" min="0" max="59" value="00" id="in-second" class="num">
+            </div>
+            <div id="buttons">
+                <button  onclick="start()" id="start" class="start" style="margin-right: 37px;">Start</button>
+                <button onclick="reset()" id="reset" class="start" style="margin-left: 37px;">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
